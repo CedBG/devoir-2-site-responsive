@@ -1,0 +1,25 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    width: 500px;
+}
+
+.container {
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+.header__img, .section__img {
+    width: 320px;
+    height: auto;
+    object-fit: cover;
+}
