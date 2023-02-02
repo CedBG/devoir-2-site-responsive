@@ -1,0 +1,20 @@
+
+@mixin border-radius($width) {
+    border-radius: $width;
+}
+
+@mixin form-btn-sent ($deg-primary-start, $deg-primary-end) {
+    background-color: linear-gradient($deg-secondary-start, $deg-secondary-end);
+}
+
+@mixin form-btn-reset ($deg-secondary-start, $deg-secondary-end) {
+    background-color: linear-gradient($deg-primary-start, $deg-primary-end);
+} 
+
+@mixin form-btn-sent-roll ($deg-primary-start-roll, $deg-primary-end-roll) {
+    background-color: linear-gradient($deg-secondary-start-roll, $deg-secondary-end-roll);
+}
+
+@mixin form-btn-reset-roll ($deg-secondary-start-roll, $deg-secondary-end-roll) {
+    background-color: linear-gradient($deg-primary-start-roll, $deg-primary-end-roll);
+} 
