@@ -11,63 +11,89 @@
 .header {
     height: 480px;
     width: 320px;
-    background-image: url(../../img/bkg.jpg);
-    object-fit: cover;
-    &__nav {
-        width: 320px;
-        height: 480px;
-        background-color: $bkg-menu; 
-        }
-        &__nav-link {
-            display: block;
-        }
-        &__close {
+    background-image: url(../../img/bkg.jpg) ;
+    &__h1 {
+        color: $item-menu;
+        font-size: $item-menu-size;
+    }
+    &__p {
+        color: $item-menu;
+        font-size: $item-menu-size;
+    }
+}
+
+// nav
+
+.navh {
+    width: 320px;
+    height: 480px;
+    background-color: $bkg-menu;    
+    &__link {
+        display: block;
+    }
+    &__close {
         display: flex;
         justify-content: flex-end;
         padding-right: 15px;
         padding-top: 15px;
-        }
-        &-f {
-            margin-right: 20px;
-        }
-        &-x {
-            font-size: 30px;
-        }
-        &__ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: flex-start;
-            height: 745.6px;
-            padding-left: 20px;       
-        }
-            &__link {
-                color: $item-menu;
-                font-size: $item-menu-size;
-            }
+    }
+    &__closef {
+        margin-right: 20px;
+    }
+    &__closex {
+        font-size: 30px;
+    }
 }
-
-.section__img {
-    width: 320px;
-    height: auto;
-    object-fit: cover;
+.ulh {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 745.6px;
+    padding-left: 20px;       
+    &__link {
+        color: $item-menu;
+        font-size: $item-menu-size;
+    }
 }
 
 // main
 
 // section
 
-.main__section {
+.section {
     margin-top: 20px;
-    &__h1 {
-        margin-top: 10px;
-        margin-bottom: 10px;
+    margin-bottom: 20px;
+    &__img {
+        width: 320px;
+        height: auto;
+        object-fit: cover;
     }
+    &__h1 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    &__p {
+        padding-left: 5px;
+    }
+    &__link {
+        padding-left: 5px;
+        color: $main-colour-link;
+    }
+}
+
+.section__link--roll:hover {
+    color: $main-colour-link-roll;
 }
 
 // aside
 
-.main__aside {
+// form
+
+.aside {
     height: 200px;
     background-image: url("../../img/bkg-form.jpg");
     display: flex;
@@ -75,10 +101,11 @@
 
 // footer
 
-.nav {
-    &__ul {
+.navf {
         background-color: $footer-bkg;
-    }   
+        padding: 20px 5px 20px 20px;
+}  
+.ulf {
     &__li {
         background-color: $footer-bkg-link;
         padding: 5px;
@@ -86,8 +113,19 @@
     }
     &__link {
         color: $footer-link-text;
+        font-weight: bold;
+        border-left: 20px solid white;
+        padding-left: 5px;
+        &--roll:hover {
+            color: $footer-bkg-link-roll;              
+        }
     }
 }
+
+// .ulf__link--roll:hover {
+//     color: $footer-bkg-link-roll;
+// }
+    
 
 // responsive-tablette
 
