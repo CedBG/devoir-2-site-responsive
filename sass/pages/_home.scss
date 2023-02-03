@@ -75,10 +75,14 @@
 
 // footer
 
-.footer__ul {
-    background-color: $footer-bkg;
+.nav {
+    &__ul {
+        background-color: $footer-bkg;
+    }   
     &__li {
         background-color: $footer-bkg-link;
+        padding: 5px;
+        margin-bottom: 5px;
     }
     &__link {
         color: $footer-link-text;
