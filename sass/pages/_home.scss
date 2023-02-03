@@ -1,9 +1,4 @@
 
-body{
-    font-family: Ubuntu, sans-serif;
-    width: 500px;
-}
-
 .container {
     max-width: 320px;
     height: auto;
@@ -14,14 +9,14 @@ body{
 // header
 
 .header {
-    height: 100vh;
+    height: 480px;
     width: 320px;
     background-image: url(../../img/bkg.jpg);
-    object-fit: fill;
+    object-fit: cover;
     &__nav {
         width: 320px;
-        height: 100vh;
-        background-color: $bkg-menu;    
+        height: 480px;
+        background-color: $bkg-menu; 
         }
         &__nav-link {
             display: block;
@@ -58,24 +53,46 @@ body{
     object-fit: cover;
 }
 
-
-
 // main
 
 // section
+
+.main__section {
+    margin-top: 20px;
+    &__h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
 
 // aside
 
 .main__aside {
     height: 200px;
     background-image: url("../../img/bkg-form.jpg");
+    display: flex;
 }
-
 
 // footer
 
+.footer__ul {
+    background-color: $footer-bkg;
+    &__li {
+        background-color: $footer-bkg-link;
+    }
+    &__link {
+        color: $footer-link-text;
+    }
+}
 
+// responsive-tablette
 
+@media screen and(min-width>768px) {
+    
+}
 
+// responsive-desktop
 
-
+@media screen and(min-width>1024px) {
+    
+}
