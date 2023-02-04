@@ -159,6 +159,9 @@ table {
   padding: 5px;
   margin-bottom: 5px;
 }
+.ulf__li--roll:hover {
+  color: rgba(120, 120, 120, 0.8);
+}
 .ulf__link {
   color: #ededed;
   font-weight: bold;
@@ -166,7 +169,7 @@ table {
   padding-left: 5px;
 }
 .ulf__link--roll:hover {
-  color: rgba(120, 120, 120, 0.8);
+  color: #fff;
 }
 
 body {

@@ -1,6 +1,7 @@
 
 // font
 $main-colour-link: #549ff3;
+$default-font: black;
 
 // menu
 $item-menu: white;
@@ -19,13 +20,14 @@ $width: 20px;
 
 // footer
 $footer-bkg: #ff7fcf;
-$footer-bkg-link: rgba(120, 120, 120, 0.2);
+$footer-bkg-li: rgba(120, 120, 120, 0.2);
 $footer-link-text: #ededed;
 
 // roll-overs
 $item-menu-roll: #f44336;
 $main-colour-link-roll: #f00;
-$footer-bkg-link-roll: rgba(120, 120, 120, 0.8);
+$footer-bkg-li-roll: rgba(120, 120, 120, 0.8);
+$footer-bkg-link-roll: #fff;
 $deg-primary-start-roll: #666;
 $deg-primary-end-roll: #444;
 $deg-secondary-start-roll: #666;

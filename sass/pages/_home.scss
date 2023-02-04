@@ -11,15 +11,24 @@
 .header {
     height: 480px;
     width: 320px;
-    background-image: url(../../img/bkg.jpg) ;
+    background-image: url(../../img/bkg.jpg);
+    background-size: contain;
     &__h1 {
-        color: $item-menu;
+        color: $default-font;
         font-size: $item-menu-size;
     }
     &__p {
         color: $item-menu;
-        font-size: $item-menu-size;
+        font-size: 20px;
     }
+}
+
+#burg {  
+    display: block;
+    position: absolute;
+    width: 31px;
+    height: 59px;
+    border: 1px solid black;
 }
 
 // nav
@@ -27,7 +36,8 @@
 .navh {
     width: 320px;
     height: 480px;
-    background-color: $bkg-menu;    
+    background-color: $bkg-menu; 
+    display: none;  
     &__link {
         display: block;
     }
@@ -93,9 +103,10 @@
 
 // form
 
-.aside {
-    height: 200px;
+.form {
+    height: 600px;
     background-image: url("../../img/bkg-form.jpg");
+    background-size: 100%;
     display: flex;
 }
 
@@ -110,6 +121,9 @@
         background-color: $footer-bkg-link;
         padding: 5px;
         margin-bottom: 5px;
+        &--roll:hover {
+            color: $footer-bkg-li-roll;              
+        }
     }
     &__link {
         color: $footer-link-text;
@@ -121,11 +135,6 @@
         }
     }
 }
-
-// .ulf__link--roll:hover {
-//     color: $footer-bkg-link-roll;
-// }
-    
 
 // responsive-tablette
 

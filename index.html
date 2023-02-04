@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="sass/base/_reset.scss">
     <link rel="stylesheet" href="css/main.css">
     <title>Devoir 2 Site responsive</title>
 </head>
+
 <body>
     <div class="container">
         <!-- header -->
         <header class="header">
             <a class="header__link" href="#">
-                 <h1 class="header__h1">
-                d-angle
-            </h1>
-            <p class="header__p">
-                a responsive answer
-            </p>
-            </a>          
+                <h1 class="header__h1">
+                    d-angle
+                </h1>
+                <p class="header__p">
+                    a responsive answer
+                </p>
+            </a>
+                <h1>menu</h1>
+                <a href="img/burg.png" id="burg"></a>           
+                        
             <!-- nav -->
-            <nav class="navh">
+            <!-- <nav class="navh">
                 <a href="#" class="navh__link">
                      <div class="navh__close">
                     <p class="navh__closef" >fermer</p>
@@ -45,7 +52,7 @@
                         <a class="ulh__link" href="#">Contacts</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
         <!-- main -->
         <main class="main">
@@ -141,7 +148,7 @@
                     Lorem, ipsum dolor.
                 </h1>
                 <p class="section__p">
-                     Lorem ipsum dolor sit amet consecteturadipisicing elit.
+                    Lorem ipsum dolor sit amet consecteturadipisicing elit.
                     Rem vero, corporis eligendi reprehenderit aperiam asperiores
                     in consequuntur pariatur natus molestiae alias ipsam cupiditate
                     aliquam nisi eveniet, fuga amet voluptatem optio.
@@ -156,7 +163,7 @@
                     Lorem, ipsum dolor.
                 </h1>
                 <p class="section__p">
-                     Lorem ipsum dolor sit amet consecteturadipisicing elit.
+                    Lorem ipsum dolor sit amet consecteturadipisicing elit.
                     Rem vero, corporis eligendi reprehenderit aperiam asperiores
                     in consequuntur pariatur natus molestiae alias ipsam cupiditate
                     aliquam nisi eveniet, fuga amet voluptatem optio.
@@ -171,7 +178,7 @@
                     Lorem, ipsum dolor.
                 </h1>
                 <p class="section__p">
-                     Lorem ipsum dolor sit amet consecteturadipisicing elit.
+                    Lorem ipsum dolor sit amet consecteturadipisicing elit.
                     Rem vero, corporis eligendi reprehenderit aperiam asperiores
                     in consequuntur pariatur natus molestiae alias ipsam cupiditate
                     aliquam nisi eveniet, fuga amet voluptatem optio.
@@ -183,108 +190,107 @@
         </main>
         <!-- aside -->
         <aside class="aside">
-            <form class="form" action="#" method="post">
-                <label for="">
-                    Nom
-                </label>
-                <input type="text">
-                <label for="">
-                    Téléphone:
-                </label>
-                <input type="text">
-                <label for="">
-                    Email:
-                </label>
-                <input type="text">
-                <label for="">
-                    message:
-                </label>
-                <input type="text">
-                <button type="submit">
-                    Envoyer
-                </button>
-                <button type="reset">
-                    Reset
-                </button>
+            <form class="form" method="post" action="#">
+                <h1>
+                    Contactez-nous
+                </h1>
+                <div class="champ">
+                    <label class="champ__label" for="name">Nom</label>
+                    <input class="champ__input" type="text" id="name" placeholder="Entrez votre nom" required>
+                </div>
+                <div class="champ">
+                    <label class="champ__label" for="tel">Téléphone:</label>
+                    <input class="champ__input" type="tel" id="tel" placeholder="Indiquez votre numero de telephone" required>
+                </div>
+                <div class="champ">
+                    <label class="champ__label" for="mail">Email:</label>
+                    <input class="champ__input" type="text" id="mail" placeholder="Votre email" required>
+                </div>
+                <label class="champ__label" for="message">message:</label>
+                <textarea rows="40" cols="55" id="message" name=message placeholder="Laissez nous un message"
+                    required></textarea>
+                <button type="submit">Envoyer</button>
+                <button type="submit">Reset</button>
             </form>
         </aside>
         <!-- footer -->
         <footer class="footer">
             <nav class="navf">
                 <ul class="ulf">
-                <li class="ulf__li" >
-                    <a class="ulf__link ulf__link--roll" href="#">
-                        Lorem, ipsum dolor.        
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.  
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor. 
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-                <li class="ulf__li" >
-                    <a class="ulf__link" href="#">
-                        Lorem, ipsum dolor.
-                    </a>
-                </li>
-            </ul>
-            </nav>            
+                    <li class="ulf__li ulf__li--roll">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                    <li class="ulf__li">
+                        <a class="ulf__link ulf__link--roll" href="#">
+                            Lorem, ipsum dolor.
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </footer>
     </div>
 </body>
+
 </html>
