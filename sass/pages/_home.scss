@@ -12,7 +12,8 @@
     height: 480px;
     width: 320px;
     background-image: url(../../img/bkg.jpg);
-    background-size: contain;
+    background-size: 320px 480px;
+    background-repeat: no-repeat;
     &__h1 {
         color: $default-font;
         font-size: $item-menu-size;
@@ -21,46 +22,56 @@
         color: $item-menu;
         font-size: 20px;
     }
+    &__open {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 31px;
+        height: 59px;
+        border: 1px solid black;
+    }
 }
 
-#burg {  
+.burgo {  
     display: block;
     position: absolute;
+    top: 20px;
+    right: 20px;
     width: 31px;
     height: 59px;
     border: 1px solid black;
 }
 
-// nav
+// navh
 
 .navh {
     width: 320px;
     height: 480px;
-    background-color: $bkg-menu; 
-    display: none;  
-    &__link {
-        display: block;
-    }
-    &__close {
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 15px;
-        padding-top: 15px;
-    }
-    &__closef {
-        margin-right: 20px;
-    }
-    &__closex {
-        font-size: 30px;
-    }
+    background-color: $bkg-menu;
 }
+    
+.navhclose {
+        
+        &__p {
+            font-size: 30px;
+        }
+        &__burg {
+            display: block;
+            width: 31px;
+            height: 59px;
+        }
+}
+
 .ulh {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: flex-start;
-    height: 745.6px;
-    padding-left: 20px;       
+    padding-left: 20px;
+    display: none;
+    &__li {
+        width: 320px;
+    }       
     &__link {
         color: $item-menu;
         font-size: $item-menu-size;
@@ -112,10 +123,13 @@
 
 // footer
 
+// navf
+
 .navf {
         background-color: $footer-bkg;
         padding: 20px 5px 20px 20px;
-}  
+} 
+
 .ulf {
     &__li {
         background-color: $footer-bkg-link;
