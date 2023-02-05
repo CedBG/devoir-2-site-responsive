@@ -14,12 +14,14 @@
     background-image: url(../../img/bkg.jpg);
     background-size: 320px 480px;
     background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
     &__h1 {
         color: $default-font;
         font-size: $item-menu-size;
     }
     &__p {
-        color: $item-menu;
+        color: $font-colour;
         font-size: 20px;
     }
     &__open {
@@ -34,13 +36,10 @@
 }
 
 .burgo {  
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    display: inline-block;
+    background-position: -20px o;
     width: 31px;
     height: 59px;
-    border: 1px solid black;
 }
 
 // navh
@@ -115,7 +114,7 @@
 // form
 
 .form {
-    height: 600px;
+    height: 800px;
     background-image: url("../../img/bkg-form.jpg");
     background-size: 100%;
     display: flex;
@@ -152,12 +151,87 @@
 
 // responsive-tablette
 
-@media screen and(min-width>768px) {
-    
+@media screen and(min-width>767px) and(max-width:1023px) {
+
+    .container {
+        width: 1023px;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "section2 section3"
+        "section4 section5 section6"
+        "section7 section8 section9";
+    }
+    .section2 {
+        grid-area: section2;
+    }       
+    .section3 {
+        grid-area: section3;
+    }       
+    .section4 {
+        grid-area: section4;
+    }       
+    .section5 {
+        grid-area: section5;
+    }       
+    .section6 {
+        grid-area: section6;
+    }       
+    .section7 {
+        grid-area: section7;
+    }       
+    .section8 {
+        grid-area: section8;
+    }       
+    .section9 {
+        grid-area: section9;
+    }       
 }
 
 // responsive-desktop
 
-@media screen and(min-width>1024px) {
-    
+@media screen and(min-width>1024px) and(max-width:1200px) {
+
+        .container {
+            width: 1200px;
+        }
+        .main {
+            display: grid;
+            grid-template-columns: repeat(4, 260px);
+            grid-template-rows: auto;
+            grid-template-areas:
+            "section1 section2"
+            "section3 section4 section5"
+            "section6 section7 section8 section9";
+        }
+        .section1 {
+            grid-area: section1;
+        }
+        .section2 {
+            grid-area: section2;
+        }       
+        .section3 {
+            grid-area: section3;
+        }       
+        .section4 {
+            grid-area: section4;
+        }       
+        .section5 {
+            grid-area: section5;
+        }       
+        .section6 {
+            grid-area: section6;
+        }       
+        .section7 {
+            grid-area: section7;
+        }       
+        .section8 {
+            grid-area: section8;
+        }       
+        .section9 {
+            grid-area: section9;
+        }       
 }
