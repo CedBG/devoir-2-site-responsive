@@ -33,13 +33,12 @@
         height: 59px;
         border: 1px solid black;
     }
-}
-
-.burgo {  
-    display: inline-block;
-    background-position: -20px o;
-    width: 31px;
-    height: 59px;
+    }
+    &__burgf {
+        object-fit: none;
+        object-position: 0 0;
+        width: 31px;height: 59px;
+    }
 }
 
 // navh
@@ -51,15 +50,15 @@
 }
     
 .navhclose {
-        
-        &__p {
-            font-size: 30px;
-        }
-        &__burg {
-            display: block;
-            width: 31px;
-            height: 59px;
-        }
+    display: flex;  
+    &__p {
+        font-size: 30px;
+    }
+    &__burg {
+        object-fit: none;
+        object-position: 0 0;
+        width: 31px;height: 59px;
+    }
 }
 
 .ulh {
